@@ -13,5 +13,3 @@ struct AppState: StateType {
    var counter: Int = 0
    var authenticated: Bool = false
 }
-
-

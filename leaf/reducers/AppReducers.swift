@@ -11,7 +11,7 @@ import ReSwift
 
 func appReducer(action: Action, state: AppState?) -> AppState {
    var state = state ?? AppState()
-   
+
    switch action {
    case is ActionLogin:
       state.authenticated = true
@@ -19,6 +19,6 @@ func appReducer(action: Action, state: AppState?) -> AppState {
       state.authenticated = false
    default: break
    }
-   
+
    return state
 }

@@ -18,6 +18,7 @@
 		D38589F8202AA2A300E8BE12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38589F7202AA2A300E8BE12 /* LaunchScreen.storyboard */; };
 		D38589FE202AC2CD00E8BE12 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D38589FD202AC2CD00E8BE12 /* .gitignore */; };
 		D3858A00202AC49F00E8BE12 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D38589FF202AC49F00E8BE12 /* README.md */; };
+		D3858A03202ACF0100E8BE12 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D3858A02202ACF0100E8BE12 /* .swiftlint.yml */; };
 		D3CF6B22202A0C14009F0CE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF6B21202A0C14009F0CE2 /* AppDelegate.swift */; };
 		D3CF6B24202A0C14009F0CE2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF6B23202A0C14009F0CE2 /* MainViewController.swift */; };
 		D3CF6B29202A0C14009F0CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CF6B28202A0C14009F0CE2 /* Assets.xcassets */; };
@@ -63,7 +64,8 @@
 		D38589F7202AA2A300E8BE12 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D38589FD202AC2CD00E8BE12 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D38589FF202AC49F00E8BE12 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D3CF6B1E202A0C14009F0CE2 /* leaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3858A02202ACF0100E8BE12 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		D3CF6B1E202A0C14009F0CE2 /* Leaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF6B21202A0C14009F0CE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3CF6B23202A0C14009F0CE2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D3CF6B28202A0C14009F0CE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		D3CF6B15202A0C14009F0CE2 = {
 			isa = PBXGroup;
 			children = (
+				D3858A02202ACF0100E8BE12 /* .swiftlint.yml */,
 				D38589FF202AC49F00E8BE12 /* README.md */,
 				D38589FD202AC2CD00E8BE12 /* .gitignore */,
 				D3CF6B51202A13E2009F0CE2 /* Podfile */,
@@ -199,7 +202,7 @@
 		D3CF6B1F202A0C14009F0CE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3CF6B1E202A0C14009F0CE2 /* leaf.app */,
+				D3CF6B1E202A0C14009F0CE2 /* Leaf.app */,
 				D3CF6B32202A0C15009F0CE2 /* leafTests.xctest */,
 				D3CF6B3D202A0C15009F0CE2 /* leafUITests.xctest */,
 			);
@@ -244,9 +247,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D3CF6B1D202A0C14009F0CE2 /* leaf */ = {
+		D3CF6B1D202A0C14009F0CE2 /* Leaf */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3CF6B46202A0C15009F0CE2 /* Build configuration list for PBXNativeTarget "leaf" */;
+			buildConfigurationList = D3CF6B46202A0C15009F0CE2 /* Build configuration list for PBXNativeTarget "Leaf" */;
 			buildPhases = (
 				7EDB5EAB2B5DA05A78C7368A /* [CP] Check Pods Manifest.lock */,
 				D3CF6B1A202A0C14009F0CE2 /* Sources */,
@@ -254,14 +257,15 @@
 				D3CF6B1C202A0C14009F0CE2 /* Resources */,
 				BCD03FD2777191737A12EA2C /* [CP] Embed Pods Frameworks */,
 				B5F23438EB1B6AAFEC8C03FD /* [CP] Copy Pods Resources */,
+				D3858A01202AC97200E8BE12 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = leaf;
+			name = Leaf;
 			productName = leaf;
-			productReference = D3CF6B1E202A0C14009F0CE2 /* leaf.app */;
+			productReference = D3CF6B1E202A0C14009F0CE2 /* Leaf.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D3CF6B31202A0C15009F0CE2 /* leafTests */ = {
@@ -345,7 +349,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3CF6B1D202A0C14009F0CE2 /* leaf */,
+				D3CF6B1D202A0C14009F0CE2 /* Leaf */,
 				D3CF6B31202A0C15009F0CE2 /* leafTests */,
 				D3CF6B3C202A0C15009F0CE2 /* leafUITests */,
 			);
@@ -360,6 +364,7 @@
 				D3858A00202AC49F00E8BE12 /* README.md in Resources */,
 				D38589FE202AC2CD00E8BE12 /* .gitignore in Resources */,
 				D3CF6B52202A13E2009F0CE2 /* Podfile in Resources */,
+				D3858A03202ACF0100E8BE12 /* .swiftlint.yml in Resources */,
 				D3CF6B50202A0D61009F0CE2 /* GoogleService-Info.plist in Resources */,
 				D38589F8202AA2A300E8BE12 /* LaunchScreen.storyboard in Resources */,
 				D3CF6B29202A0C14009F0CE2 /* Assets.xcassets in Resources */,
@@ -545,6 +550,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D3858A01202AC97200E8BE12 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -583,12 +601,12 @@
 /* Begin PBXTargetDependency section */
 		D3CF6B34202A0C15009F0CE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3CF6B1D202A0C14009F0CE2 /* leaf */;
+			target = D3CF6B1D202A0C14009F0CE2 /* Leaf */;
 			targetProxy = D3CF6B33202A0C15009F0CE2 /* PBXContainerItemProxy */;
 		};
 		D3CF6B3F202A0C15009F0CE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3CF6B1D202A0C14009F0CE2 /* leaf */;
+			target = D3CF6B1D202A0C14009F0CE2 /* Leaf */;
 			targetProxy = D3CF6B3E202A0C15009F0CE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -815,7 +833,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3CF6B46202A0C15009F0CE2 /* Build configuration list for PBXNativeTarget "leaf" */ = {
+		D3CF6B46202A0C15009F0CE2 /* Build configuration list for PBXNativeTarget "Leaf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3CF6B47202A0C15009F0CE2 /* Debug */,

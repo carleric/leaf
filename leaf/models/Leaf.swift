@@ -11,5 +11,5 @@ import CoreLocation
 
 struct Leaf {
    var dateCaught: Date
-   var location: CLLocation 
+   var location: CLLocation
 }
