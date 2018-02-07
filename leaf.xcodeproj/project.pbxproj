@@ -17,6 +17,7 @@
 		D38589F4202A350D00E8BE12 /* AuthActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38589F3202A350D00E8BE12 /* AuthActions.swift */; };
 		D38589F8202AA2A300E8BE12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38589F7202AA2A300E8BE12 /* LaunchScreen.storyboard */; };
 		D38589FE202AC2CD00E8BE12 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D38589FD202AC2CD00E8BE12 /* .gitignore */; };
+		D3858A00202AC49F00E8BE12 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D38589FF202AC49F00E8BE12 /* README.md */; };
 		D3CF6B22202A0C14009F0CE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF6B21202A0C14009F0CE2 /* AppDelegate.swift */; };
 		D3CF6B24202A0C14009F0CE2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF6B23202A0C14009F0CE2 /* MainViewController.swift */; };
 		D3CF6B29202A0C14009F0CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CF6B28202A0C14009F0CE2 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		D38589F3202A350D00E8BE12 /* AuthActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActions.swift; sourceTree = "<group>"; };
 		D38589F7202AA2A300E8BE12 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D38589FD202AC2CD00E8BE12 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D38589FF202AC49F00E8BE12 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D3CF6B1E202A0C14009F0CE2 /* leaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF6B21202A0C14009F0CE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3CF6B23202A0C14009F0CE2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		D3CF6B15202A0C14009F0CE2 = {
 			isa = PBXGroup;
 			children = (
+				D38589FF202AC49F00E8BE12 /* README.md */,
 				D38589FD202AC2CD00E8BE12 /* .gitignore */,
 				D3CF6B51202A13E2009F0CE2 /* Podfile */,
 				D3CF6B20202A0C14009F0CE2 /* leaf */,
@@ -354,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3858A00202AC49F00E8BE12 /* README.md in Resources */,
 				D38589FE202AC2CD00E8BE12 /* .gitignore in Resources */,
 				D3CF6B52202A13E2009F0CE2 /* Podfile in Resources */,
 				D3CF6B50202A0D61009F0CE2 /* GoogleService-Info.plist in Resources */,

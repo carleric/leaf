@@ -25,3 +25,4 @@ DerivedData/
 Pods
 
 *.log
+leaf/GoogleService-Info.plist
