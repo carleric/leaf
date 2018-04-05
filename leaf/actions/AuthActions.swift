@@ -9,5 +9,10 @@
 import Foundation
 import ReSwift
 
-struct ActionLogin: Action {}
+struct ActionLogin: Action {
+   public var user: User
+   init(_ user: User) {
+      self.user = user 
+   }
+}
 struct ActionLogout: Action {}

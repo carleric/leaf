@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		63F7125FA510D1A4974AFE01 /* Pods_leafTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CA5005C5DE3831FDAE889B /* Pods_leafTests.framework */; };
 		C43232A2596356E3DDEFE3CE /* Pods_leafUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5951AB2FE906E5FD80192464 /* Pods_leafUITests.framework */; };
+		D32209EC2075AEC100FC5D93 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32209EB2075AEC100FC5D93 /* Services.swift */; };
+		D32209FB2075CA2300FC5D93 /* LeafLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32209FA2075CA2300FC5D93 /* LeafLogger.swift */; };
+		D3220A232075CB2000FC5D93 /* STLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3220A222075CB2000FC5D93 /* STLogging.framework */; };
+		D3220A252075CB2000FC5D93 /* STLogging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3220A222075CB2000FC5D93 /* STLogging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D38589D6202A1BDF00E8BE12 /* Leaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38589D5202A1BDF00E8BE12 /* Leaf.swift */; };
 		D38589D8202A1C4B00E8BE12 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38589D7202A1C4B00E8BE12 /* CoreLocation.framework */; };
 		D38589DA202A1C7A00E8BE12 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38589D9202A1C7A00E8BE12 /* User.swift */; };
@@ -46,6 +50,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D3220A242075CB2000FC5D93 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D3220A252075CB2000FC5D93 /* STLogging.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		455DCA303D590D20AF1E3450 /* Pods-leafUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leafUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-leafUITests/Pods-leafUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		51A4962A1FE4B2687F63F357 /* Pods-leaf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leaf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-leaf/Pods-leaf.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +73,10 @@
 		880D47B786289825ADD84ECD /* Pods-leafTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leafTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-leafTests/Pods-leafTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7CA5005C5DE3831FDAE889B /* Pods_leafTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_leafTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CFB44B9DD011E6CB8822E5 /* Pods-leaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leaf.release.xcconfig"; path = "Pods/Target Support Files/Pods-leaf/Pods-leaf.release.xcconfig"; sourceTree = "<group>"; };
+		D32209EB2075AEC100FC5D93 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		D32209FA2075CA2300FC5D93 /* LeafLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafLogger.swift; sourceTree = "<group>"; };
+		D3220A222075CB2000FC5D93 /* STLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = STLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3220A262075CDCF00FC5D93 /* STLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STLogging.framework; path = "../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/STLogging.framework"; sourceTree = "<group>"; };
 		D38589D5202A1BDF00E8BE12 /* Leaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaf.swift; sourceTree = "<group>"; };
 		D38589D7202A1C4B00E8BE12 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D38589D9202A1C7A00E8BE12 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -88,6 +110,7 @@
 			files = (
 				D38589D8202A1C4B00E8BE12 /* CoreLocation.framework in Frameworks */,
 				E8ED10A280F4C50D258BAC5A /* Pods_leaf.framework in Frameworks */,
+				D3220A232075CB2000FC5D93 /* STLogging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +149,7 @@
 		8F49EF16D03FA23DB9CD4682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3220A262075CDCF00FC5D93 /* STLogging.framework */,
 				D38589D7202A1C4B00E8BE12 /* CoreLocation.framework */,
 				82BF7A5C592AC570F755037C /* Pods_leaf.framework */,
 				A7CA5005C5DE3831FDAE889B /* Pods_leafTests.framework */,
@@ -186,6 +210,7 @@
 		D3CF6B15202A0C14009F0CE2 = {
 			isa = PBXGroup;
 			children = (
+				D3220A222075CB2000FC5D93 /* STLogging.framework */,
 				D3858A02202ACF0100E8BE12 /* .swiftlint.yml */,
 				D38589FF202AC49F00E8BE12 /* README.md */,
 				D38589FD202AC2CD00E8BE12 /* .gitignore */,
@@ -222,6 +247,8 @@
 				D3CF6B28202A0C14009F0CE2 /* Assets.xcassets */,
 				D3CF6B2D202A0C15009F0CE2 /* Info.plist */,
 				D3CF6B4F202A0D61009F0CE2 /* GoogleService-Info.plist */,
+				D32209EB2075AEC100FC5D93 /* Services.swift */,
+				D32209FA2075CA2300FC5D93 /* LeafLogger.swift */,
 			);
 			path = leaf;
 			sourceTree = "<group>";
@@ -257,7 +284,7 @@
 				D3CF6B1C202A0C14009F0CE2 /* Resources */,
 				BCD03FD2777191737A12EA2C /* [CP] Embed Pods Frameworks */,
 				B5F23438EB1B6AAFEC8C03FD /* [CP] Copy Pods Resources */,
-				D3858A01202AC97200E8BE12 /* ShellScript */,
+				D3220A242075CB2000FC5D93 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -550,19 +577,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3858A01202AC97200E8BE12 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -574,8 +588,10 @@
 				D38589DC202A31D200E8BE12 /* AppState.swift in Sources */,
 				D38589F1202A34DC00E8BE12 /* AppReducers.swift in Sources */,
 				D38589D6202A1BDF00E8BE12 /* Leaf.swift in Sources */,
+				D32209FB2075CA2300FC5D93 /* LeafLogger.swift in Sources */,
 				D38589F4202A350D00E8BE12 /* AuthActions.swift in Sources */,
 				D3CF6B24202A0C14009F0CE2 /* MainViewController.swift in Sources */,
+				D32209EC2075AEC100FC5D93 /* Services.swift in Sources */,
 				D3CF6B22202A0C14009F0CE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -711,7 +727,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -727,6 +743,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CBZS6UC35V;
 				INFOPLIST_FILE = leaf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skogtek.leaf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -743,6 +760,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CBZS6UC35V;
 				INFOPLIST_FILE = leaf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skogtek.leaf;
 				PRODUCT_NAME = "$(TARGET_NAME)";

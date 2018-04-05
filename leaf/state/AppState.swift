@@ -12,4 +12,5 @@ import ReSwift
 struct AppState: StateType {
    var counter: Int = 0
    var authenticated: Bool = false
+   var user: User?
 }

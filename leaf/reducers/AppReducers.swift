@@ -14,7 +14,9 @@ func appReducer(action: Action, state: AppState?) -> AppState {
 
    switch action {
    case is ActionLogin:
+      let loginAction = action as! ActionLogin
       state.authenticated = true
+      state.user = loginAction.user
    case is ActionLogout:
       state.authenticated = false
    default: break

@@ -16,6 +16,8 @@ class MainViewController: UIViewController, StoreSubscriber {
 
    typealias StoreSubscriberStateType = AppState
 
+   var logger = Services.makeLogger()
+
    lazy var authStateLabel: UILabel = {
       let label = UILabel(frame: CGRect(x: 100, y: 60, width: 300, height: 40))
       return label
@@ -63,18 +65,24 @@ class MainViewController: UIViewController, StoreSubscriber {
             googleProvider.signIn(withDefaultValue: nil, presenting: self, completion: { (cred, error, callback) in
                //
                if let error = error {
-                  NSLog(error.localizedDescription)
+                  self.logger.log(error.localizedDescription)
                   callback?(nil, error)
                } else if let cred = cred {
                   NSLog("got creds from provider")
                   Auth.auth().signInAndRetrieveData(with: cred, completion: { (authDataResult, err) in
                      if let err = err {
-                        NSLog(err.localizedDescription)
+                        self.logger.log(err.localizedDescription)
                         callback?(nil, err)
                      } else if let user = authDataResult?.user {
-                        NSLog("got user info: \(user)")
+                        self.logger.log("got user info: \(String(describing: user.displayName))")
                         callback?(user, nil)
-                        mainStore.dispatch(ActionLogin())
+                        let names = user.displayName?.components(separatedBy: CharacterSet.whitespacesAndNewlines)
+                        if let email = user.email {
+                           let leafUser = User(firstName: names?.first, lastName: names?.last, email: email, leafs: nil)
+                           mainStore.dispatch(ActionLogin(leafUser))
+                        } else {
+                          self.logger.log("missing email from Google user account")
+                        }
                      }
                   })
                }
@@ -84,8 +92,8 @@ class MainViewController: UIViewController, StoreSubscriber {
    }
 
    func newState(state: AppState) {
-      NSLog("state = \(state)")
-      self.authStateLabel.text = "Authenticated: \(state.authenticated)"
+      self.logger.log("state = \(state)")
+      self.authStateLabel.text = "Authenticated: \(state.authenticated) User: \(String(describing: state.user?.firstName))"
       let loginButtonTitle = state.authenticated ? "logout from Google" : "login with Google"
       self.loginButton.setTitle(loginButtonTitle, for: .normal)
    }
